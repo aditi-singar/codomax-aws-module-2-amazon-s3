@@ -1,0 +1,287 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS Cloud Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0b1220;
+            color: white;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #142238;
+            padding: 20px 8%;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        nav h2 {
+            color: #38bdf8;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        .hero {
+            padding: 100px 10%;
+            text-align: center;
+            background: linear-gradient(135deg, #102542, #164e63);
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+
+        .hero span {
+            color: #38bdf8;
+        }
+
+        .hero p {
+            font-size: 18px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 25px;
+            background: #0284c7;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        section {
+            padding: 60px 10%;
+            text-align: center;
+        }
+
+        section h2 {
+            color: #38bdf8;
+            font-size: 30px;
+            margin-bottom: 25px;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background: #17263d;
+            padding: 25px;
+            width: 230px;
+            border-radius: 10px;
+            border: 1px solid #29415e;
+        }
+
+        .card h3 {
+            color: #38bdf8;
+            margin-bottom: 10px;
+        }
+
+        .card:hover {
+            border-color: #38bdf8;
+        }
+
+        #contact {
+            background: #142238;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #080e19;
+            color: #94a3b8;
+        }
+
+        @media(max-width: 700px) {
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px;
+            }
+
+            .hero h1 {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <h2>CloudPortfolio</h2>
+            <div>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#s3">AWS S3</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Home -->
+    <section class="hero" id="home">
+        <h1>Hello, I'm <span>Aspiring Cloud Engineer</span></h1>
+        <p>Welcome to my personal cloud computing portfolio.</p>
+        <p>Learning AWS, Cloud Computing and Web Hosting.</p>
+        <a href="#projects" class="btn">Explore My Projects</a>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I am a technology enthusiast interested in Cloud Computing
+            and Amazon Web Services. I enjoy learning new technologies,
+            developing practical projects and improving my technical skills.
+        </p>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+        <h2>My Technical Skills</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Amazon S3</h3>
+                <p>Cloud storage and file management.</p>
+            </div>
+
+            <div class="card">
+                <h3>Amazon EC2</h3>
+                <p>Virtual server and web hosting.</p>
+            </div>
+
+            <div class="card">
+                <h3>HTML & CSS</h3>
+                <p>Website design and development.</p>
+            </div>
+
+            <div class="card">
+                <h3>Linux</h3>
+                <p>Basic Linux commands and operations.</p>
+            </div>
+
+            <div class="card">
+                <h3>GitHub</h3>
+                <p>Code management and project hosting.</p>
+            </div>
+
+            <div class="card">
+                <h3>AWS Cloud</h3>
+                <p>Cloud computing fundamentals.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+        <h2>My Projects</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>EC2 Web Hosting</h3>
+                <p>Hosted a website using an Amazon EC2 instance.</p>
+            </div>
+
+            <div class="card">
+                <h3>S3 Static Website</h3>
+                <p>Deployed a portfolio website using Amazon S3.</p>
+            </div>
+
+            <div class="card">
+                <h3>Cloud Storage</h3>
+                <p>Learned how to upload and manage files in S3.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Amazon S3 Information -->
+    <section id="s3">
+        <h2>What is Amazon S3?</h2>
+
+        <p>
+            Amazon Simple Storage Service (Amazon S3) is an object
+            storage service provided by Amazon Web Services.
+            It allows users to store, retrieve and manage data
+            from anywhere.
+        </p>
+
+        <div class="cards">
+            <div class="card">
+                <h3>S3 Buckets</h3>
+                <p>Containers used to store objects and files.</p>
+            </div>
+
+            <div class="card">
+                <h3>S3 Objects</h3>
+                <p>Files and their associated metadata stored in buckets.</p>
+            </div>
+
+            <div class="card">
+                <h3>Storage Classes</h3>
+                <p>Different storage options based on data access needs.</p>
+            </div>
+
+            <div class="card">
+                <h3>Access Control</h3>
+                <p>Manage access using bucket policies and permissions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+
+        <p>Email: your-email@example.com</p>
+        <p>GitHub: github.com/your-username</p>
+        <p>LinkedIn: linkedin.com/in/your-profile</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Cloud Portfolio | Designed and Hosted using AWS S3</p>
+    </footer>
+
+</body>
+</html>
